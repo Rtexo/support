@@ -2,7 +2,7 @@
 
 Public support and feedback tracker for Rtexo products.
 
-## Salesforce Data Source for Salesforce
+## SOQL Data Source for Salesforce
 
 The current product is a JetBrains IDE plugin that adds Salesforce as a data source in **IntelliJ IDEA Ultimate** and **DataGrip**. It uses the standard JetBrains Database Tools workflow, authenticates through the Salesforce CLI, runs SOQL queries, and provides Salesforce object and field metadata for browsing.
 

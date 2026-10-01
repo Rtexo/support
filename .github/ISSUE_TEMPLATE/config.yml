@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Product overview and documentation
+    url: https://github.com/Rtexo/jb-sf-datasource
+    about: Browse the source repository and technical documentation.
+  - name: Privacy policy
+    url: https://rtexo.com/plugins/jb-sf-datasource/privacy
+    about: Read how the plugin handles data and telemetry.
+  - name: Contact maintainers
+    url: mailto:support@rtexo.com
+    about: Contact maintainers about a report that should not be posted publicly.

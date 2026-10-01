@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an improvement or capability
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues first. Describe the user need and desired outcome. Do not include private Salesforce data or credentials.
+  - type: input
+    id: product
+    attributes:
+      label: Product
+      placeholder: Salesforce Data Source for JetBrains IDEs
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or workflow that is difficult today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What would you like to happen?
+      description: Explain the capability or behavior that would help.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What do you do today, or what alternatives have you considered?
+    validations:
+      required: false

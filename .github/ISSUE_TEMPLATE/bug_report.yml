@@ -1,0 +1,80 @@
+name: Bug report
+description: Report a reproducible problem with a Rtexo product
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues first. This form is public. Never include credentials, tokens, auth URLs, private keys, customer data, or unredacted logs.
+  - type: input
+    id: product
+    attributes:
+      label: Product
+      description: Which Rtexo product are you using?
+      placeholder: Salesforce Data Source for JetBrains IDEs
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      placeholder: For example, 1.2.3
+    validations:
+      required: true
+  - type: input
+    id: ide-version
+    attributes:
+      label: IDE and version
+      placeholder: For example, DataGrip 2026.2
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: For example, Windows 11, macOS, or Ubuntu
+    validations:
+      required: true
+  - type: input
+    id: sf-cli-version
+    attributes:
+      label: Salesforce CLI version
+      description: Run sf version locally. Do not paste authentication output.
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and include a short, redacted query only if needed.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Configure ...
+        2. Open ...
+        3. Run ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant redacted logs
+      description: Remove tokens, usernames, org identifiers, record data, and other private details before sharing.
+    validations:
+      required: false

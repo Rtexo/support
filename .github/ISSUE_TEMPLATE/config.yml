@@ -1,8 +1,14 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
-  - name: Product overview and documentation
-    url: https://github.com/Rtexo/jb-sf-datasource
-    about: Browse the source repository and technical documentation.
-  - name: Privacy policy and contact details
+  - name: Product documentation
+    url: https://rtexo.com/
+    about: Read product documentation and setup guidance.
+  - name: Marketplace listing
+    url: https://plugins.jetbrains.com/plugin/34615
+    about: Install the SOQL Data Source for Salesforce plugin.
+  - name: Privacy policy
     url: https://rtexo.com/plugins/jb-sf-datasource/privacy
-    about: Read the plugin privacy policy and contact the maintainers.
+    about: Read the plugin privacy policy.
+  - name: Security-sensitive reports
+    url: mailto:support@rtexo.com?subject=%5BSECURITY%5D%20SOQL%20Data%20Source
+    about: Do not file vulnerabilities publicly.

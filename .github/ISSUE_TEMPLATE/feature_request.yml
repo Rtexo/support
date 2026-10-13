@@ -34,3 +34,33 @@ body:
       description: What do you do today, or what alternatives have you considered?
     validations:
       required: false
+  - type: dropdown
+    id: affected-role
+    attributes:
+      label: Who is affected?
+      options:
+        - Developer
+        - Administrator
+        - Analyst
+        - Other
+    validations:
+      required: false
+  - type: dropdown
+    id: affected-workflow
+    attributes:
+      label: Would this change affect read-only queries, schema browsing, or SOQL authoring?
+      multiple: true
+      options:
+        - Read-only queries
+        - Schema browsing
+        - SOQL authoring
+        - None of these
+    validations:
+      required: false
+  - type: checkboxes
+    id: sanitized-examples
+    attributes:
+      label: Sanitized examples
+      options:
+        - label: I confirm that any examples and screenshots are sanitized.
+          required: true

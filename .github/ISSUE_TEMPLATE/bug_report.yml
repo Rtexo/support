@@ -5,13 +5,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please search existing issues first. This form is public. Never include credentials, tokens, auth URLs, private keys, customer data, or unredacted logs.
-  - type: input
+        Please search existing issues first. This form is public. Never include credentials, tokens, auth URLs, private keys, customer data, or unredacted logs. Read the safe-reporting guidance at https://rtexo.com/ before posting.
+  - type: dropdown
     id: product
     attributes:
       label: Product
-      description: Which Rtexo product are you using?
-      placeholder: Salesforce Data Source for JetBrains IDEs
+      description: Select the product. Do not include connection details.
+      options:
+        - SOQL Data Source for Salesforce
     validations:
       required: true
   - type: input
@@ -39,7 +40,7 @@ body:
     id: sf-cli-version
     attributes:
       label: Salesforce CLI version
-      description: Run sf version locally. Do not paste authentication output.
+      description: Run sf version. Do not paste sf org display, authentication output, or JSON containing org data.
     validations:
       required: false
   - type: textarea
@@ -78,3 +79,23 @@ body:
       description: Remove tokens, usernames, org identifiers, record data, and other private details before sharing.
     validations:
       required: false
+  - type: dropdown
+    id: connection-context
+    attributes:
+      label: Connection context
+      description: Do not include an alias, username, instance URL, or organization ID.
+      options:
+        - Sandbox
+        - Production
+        - Scratch Org
+        - Developer Edition
+        - Prefer not to say
+    validations:
+      required: false
+  - type: checkboxes
+    id: safe-report
+    attributes:
+      label: Safe public report confirmation
+      options:
+        - label: I confirm this public report contains no access token, refresh token, session ID, password, auth URL, private key, organization identifier, real customer data, or unredacted log.
+          required: true
